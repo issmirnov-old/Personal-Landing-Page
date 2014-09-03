@@ -1,0 +1,247 @@
+/*reset css*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*----------------------------------------------------------------------------*/
+body{
+background:#666666; /*fall back and splashimage*/
+background-image:url('img/bg1.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center; 
+
+
+
+font-family:'Lucida Grande', Verdana, sans-serif;
+font-size:14px;
+color:#666666;
+}
+
+#pagecontainer{
+/*background:#F4F1DF; also nice*/
+/*background:#F9F6E8; also nice*/
+background:#FFFBE6; /*nice pale - good choice*/
+width:942px;
+
+position:relative;
+margin: 50px auto;
+/*width: 80%;*/
+padding: 30px 30px;
+
+/*height:500px;*/
+overflow:hidden;
+
+/*rounded corners*/
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+}
+
+#header{
+height:0px;
+}
+
+
+#left{
+float:left;
+width:58%;
+
+/*background:#cccccc;*/
+
+margin-bottom:20px;
+
+}
+#nav{
+height:100%;
+}
+#right{
+float:right;
+width:38%;
+overflow:hidden;
+
+}
+
+#photo{
+margin: 0 auto;
+/*rounded corners*/
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+
+min-width:362px;
+
+/*shadows*/
+-moz-box-shadow: 0 0 10px #666;
+-webkit-box-shadow: 0 0 10px #666;
+-o-box-shadow: 0 0 10px #666;
+box-shadow: 0 0 10px #666;
+}
+
+#subtext{
+text-align:center;
+margin-top:10px;
+font-weight:bold;
+}
+
+#quote{
+display:none;
+}
+
+
+#footer{
+clear:both;
+height: 0px;/*temporarily make 0 instead of 50px*/
+display:none;
+}
+
+
+/* tab work-------------------------------------------------------------------- */
+
+#leftcontent { 
+background: #eee;
+ padding: 10px;
+ margin: 0 0 15px 0;
+ 
+/*shadows*/
+-moz-box-shadow: 0 0 5px #666;
+-webkit-box-shadow: 0 0 5px #666;
+-o-box-shadow: 0 0 5px #666;
+box-shadow: 0 0 5px #666;
+ 
+/*rounded corners*/
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+-o-border-radius: 2px;
+border-radius: 2px;
+}
+
+#leftcontent .nav { 
+overflow: hidden;
+margin: 0 0 10px 0;
+}
+#leftcontent .nav li {
+width: 97px;
+float: left;
+margin: 0 10px 0 0; 
+}
+#leftcontent .nav li.last { margin-right: 0; }
+#leftcontent .nav li a {
+ display: block;
+ padding: 5px;
+ background: #959290; /*nice grey, inactive state*/
+ color: white;
+ font-size: 16px;
+ text-align: center;
+ border: 0; 
+text-decoration:none;
+
+ /*rounded corners for nav tabs*/
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+
+}
+
+
+#leftcontent .nav li a:hover {
+ background-color: #777; /*hover code*/
+ }
+
+#leftcontent ul { list-style: none; }
+#leftcontent ul li a {
+ /*
+ display: block;
+ border-bottom: 1px solid #666;
+ padding: 4px;
+  */
+  color: #666;
+
+ }
+#leftcontent ul li a:hover, #leftcontent ul li a:focus { 
+/*highlight code for hover over link in content*/
+background: #555;
+ color: white; 
+ }
+#leftcontent ul li:last-child a { border: none; } /*redundant, borders are disabled*/
+
+/* active state colors for tabs*/
+#leftcontent ul.nav a.current { background-color: #555; color: white; }
+
+/*REDUNDANT - allows for individual styling of active states
+#leftcontent li.nav-one a.current, ul.skills li a:hover { background-color: #555; color: white; }
+#leftcontent li.nav-two a.current, ul.interests li a:hover { background-color: #555; color: white; }
+#leftcontent li.nav-three a.current, ul.projects li a:hover { background-color: #555; color: white; }
+#leftcontent li.nav-four a.current, ul.contact li a:hover { background-color: #555; color: white; }
+#leftcontent li.nav-five a.current, ul.contact li a:hover { background-color: #555; color: white; }
+*/
+
+
+/*end tab work ---------------------------------------------------------------------*/
+
+div.list-wrap {
+line-height: 1.5;
+}
+/*quote work*/
+#open{
+font-size:96px;
+font-family: 'Anton', sans-serif;
+}
+#close{
+font-size:96px;
+font-family: 'Anton', sans-serif;
+}
+#words{
+font-size:28px;
+}

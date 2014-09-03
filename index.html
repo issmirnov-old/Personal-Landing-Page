@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>YOUR NAME</title>
+	<!-- Basic Meta Data -->
+		<meta charset="UTF-8" />
+		<meta name="copyright" content="" />
+		<meta name="description" content='Home page of YOUR NAME HERE' >
+		<meta name="keywords" content="">
+		<META name="Author" content="YOUR NAME">
+	<!-- Favicon-->
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" href="iDevice.png" />
+		
+	<!--redirect to mobile-->
+		<script type="text/javascript"> // <![CDATA[
+			if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {
+			document.location = "mobile.html";
+			} // ]]>
+			// note - android devices seem to respect viewport stuff, unlike iOS
+		</script>
+		
+	<!--css work-->
+		<link rel='stylesheet' href='plp/main.css' type='text/css' />
+
+	
+	<!--javascript -->
+		<script type="text/javascript" src="plp/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="plp/organictabs.jquery.js"></script>
+		<script language="javascript">
+			$(document).ready(function() {
+				//initialize tabs
+			    $("#leftcontent").organicTabs();
+			});//end doc ready
+			
+			$(window).resize(function() {
+				//run img correction script?
+			});
+		</script>
+		
+	<!--insert analytics here-->
+
+</script>
+
+	</head>
+	
+	
+	<body>
+		<div id="pagecontainer">
+			<div id="header">
+				
+			</div>
+			<div id="right">
+				<center><img id="photo" src="plp/img/me1.jpg" alt="Photo of me" width="343px" /></center>
+				<div id="subtext">
+					<p>Your Name</p>
+				</div>
+			</div>
+			
+			<div id="left">
+	<!--tab work----------------------------------------------------->			
+				<div id="leftcontent">
+
+			
+					<ul class="nav">
+						<li class="nav-one"><a href="#welcome" class="current">Welcome</a></li>
+						<li class="nav-two"><a href="#skills" >Skills</a></li>
+						<li class="nav-three"><a href="#interests">Interests</a></li>
+						<li class="nav-four"><a href="#projects">Projects</a></li>
+						<li class="nav-five last"><a href="#contact">Contact</a></li>
+					
+					
+					</ul>
+	
+					<div class="list-wrap">
+	
+						<ul id="welcome">
+							<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</li>
+						</ul>
+						
+						<ul id="skills" class="hide">
+							<li>Skill 1</li>
+							<li>Skill 2</li>
+							<li>Skill 3</li>
+							<li>Skill 4</li>
+						</ul>
+		 
+						 <ul id="interests" class="hide">
+							<li>Interest 1</li>
+							<li>Interest 2</li>
+							<li>Interest 3</li>
+							<li>Interest 4</li>
+							<li>Interest 5</li>
+							<li><a href="http://google.com">Linked Interest</a></li>
+						</ul>
+		 
+						<ul id="projects" class="hide">
+							<li>Project 1</li>
+							<li><a href="http://google.com">Linked Project</a></li>
+						</ul>
+		 
+						<ul id="contact" class="hide">
+							<li><a href="mailto:you@mail.com">email</a></li>
+						</ul>
+						
+
+		 
+					</div> <!-- END List Wrap -->
+ 
+				</div> <!-- END leftcontent (Organic Tabs)-->
+
+	
+	
+	
+	
+	
+	
+			</div><!--end left-->
+			<div id="footer">
+			</div>
+		</div><!--end page container-->
+	</body>
+</html>
